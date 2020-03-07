@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>COLOMBIAMAR</title>
+  <link rel="stylesheet" href="admin/css/normalize.css" />
+  <link rel="stylesheet" href="admin/assets/fonts/fontawesome-5.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="admin/css/login-styles.css" />
+
+
+</head>
+
+<body>
+  <div class="login-wrapper">
+    <div class="login-info">
+      <img src="assets/img/logo.png" alt="" class="login-info__logo">
+      <h3 class="login-info__title" style="color:#a11112">Rúbricas</h3>
+      <small class="login-info__description"></small>
+      <div class="login-info__deco-bar"></div>
+    </div>
+    <div id="login" class="login-form">
+      <div id="login-form-w" class="login-form__wrapper">
+        <h3 class="login-form__title">Inicio de Sesión</h3>
+        <small class="login-form__description">
+          Ingresa a COLOMBIAMAR con tu identificación y contrase&ntilde;a
+        </small>
+        <form action="validar.php" method="POST">
+          <div class="login-form__fields">
+            <label class="login-form__label" for="">Identificación del usuario</label>
+            <input class="login-form__input" type="text" placeholder="Escribe tu usuario" name="user"> 
+            <label class="login-form__label" for="">Contrase&ntilde;a</label>
+            <span class="login-form__input--password-eye-mask"><input id="user-pass" name="pass"
+                class="login-form__input" type="password" placeholder="Escribe tu contraseña">
+              <span id="eye-password-sw" class="login-form__input--password-eye"><i id="pass-eye-icon"
+                  class="fas fa-eye"></i></span>
+            </span>
+            <a id="to-forgot-sw" class="forgot-password" href="#">¿Olvidaste tu contraseña?</a>
+          </div>
+          <button class="login-form__submit" type="submit">
+            Iniciar
+          </button>
+        </form>
+      </div>
+      <div id="forgot-pass" class="login-form__wrapper ">
+        <h3 class="login-form__title">Recuperar Contraseña</h3>
+        <small class="login-form__description">
+          Ingresa tu correo electrónico asociado con COLOMBIAMAR para proceder con el proceso de recuperación de contraseña.
+        </small>
+        <div class="login-form__fields">
+          <label class="login-form__label" for="">Correo de recuperación</label>
+          <input class="login-form__input" type="text" placeholder="Correo electrónico">
+
+          <a id="to-login-sw" class="forgot-password" href="#">¿Iniciar sesión ahora?</a>
+        </div>
+        <button class="login-form__submit">
+          Recuperar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="admin/js/login.js"></script>
+</body>
+
+</html>
